@@ -8,11 +8,6 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Home,
-    },
-    {
       path: '/login',
       name: 'login',
       component: () => import('./views/Login.vue'),
@@ -21,6 +16,16 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: Register,
+    },
+    {
+      path: '/',
+      name: 'projects',
+      component: () => import('./views/Projects.vue'),
+    },
+    {
+      path: '/home',
+      name: 'home',
+      component: Home,
     },
     {
       path: '/about',
