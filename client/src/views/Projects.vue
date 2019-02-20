@@ -16,8 +16,8 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import Projects from '@/components/Projects.vue';
 import router from '../router';
+import Projects from '@/components/Projects.vue';
 
 export default {
   components: {
